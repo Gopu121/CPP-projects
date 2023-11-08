@@ -1,0 +1,48 @@
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+    char a[]={'h','e','l','l','o','w','o','r','l','d'};
+    string z;
+    int i,j=0,count=0;
+    for(i=97;i<=122;i++)
+    {
+        cout<<z;
+        if(j==10 || count==11)
+        {
+            cout<<"d";
+            exit(0);
+        }
+        cout<<char(i)<<endl;
+        if(char(i)==a[j])
+        {
+            count++;
+            if(count==1)
+                z="h";
+            if(count==2)
+                z="he";
+            if(count==3)
+                z="hel";
+            if(count==4)
+                z="hell";
+            if(count==5)
+                z="hello";
+            if(count==6)
+               z="hello ";
+            if(count==7)
+                z="hello w";
+            if(count==8)
+                z="hello wo";
+            if(count==9)
+                z="hello wor";
+            if(count==10)
+                z="hello worl";
+            if(count==11)
+                z="hello world";
+            j++;
+            i=96;
+        }
+    }
+}
