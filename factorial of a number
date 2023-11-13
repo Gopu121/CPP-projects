@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+int fact(int x)
+{
+    return (x==0)?1:x*fact(x-1);
+}
+int main()
+{
+    int x;
+    cout<<"enter factorial of a number to be find :";
+    cin>>x;
+    cout<<"the factorial is :"<<fact(x);
+    return 0;
+}
