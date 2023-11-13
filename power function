@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+float pow(int x,int y)
+{
+    float power=1.0;
+    if(y==0)
+        return power;
+    else
+    {
+        if(y>0)\
+        {
+        for(int i=0;i<y;i++)
+            power*=x;
+        }
+        else
+        {
+            for(int i=0;i>y;i--)
+                power/=(x);
+        }
+        return power;
+    }
+}
+int main()
+{
+    int a,b;
+    cout<<"enter the base and exponent :";
+    cin>>a>>b;
+    cout<<"the power of "<<a<<" ^ "<<b<<" is:"<<pow(a,b);
+    return 0;
+}
