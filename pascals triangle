@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int binu(int n,int k)
+{
+    if(k==0 || k==n)
+    return 1;
+    else
+        return binu(n-1,k-1)+binu(n-1,k);
+}
+int pascal(int r)
+{
+    int i,j;
+    for(i=0;i<r;i++)
+    {
+        .
+        cout<<endl;
+        for(j=0;j<=i;j++)
+            cout<<binu(i,j)<<" ";
+    }
+}
+int main()
+{
+    int row;
+    cout<<"enter the no of rows :";
+    cin>>row;
+    cout<<"the pascal triangle is : ";
+    pascal(row);
+    return 0;
+}
