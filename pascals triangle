@@ -9,9 +9,11 @@ int binu(int n,int k)
 }
 int pascal(int r)
 {
-    int i,j;
+    int i,j,k;
     for(i=0;i<r;i++)
     {
+     for(k=0;k<r-i;k++)
+        cout<<" ";
         cout<<endl;
         for(j=0;j<=i;j++)
             cout<<binu(i,j)<<" ";
